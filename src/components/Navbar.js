@@ -47,9 +47,9 @@ export default function Navbar({darkMode, handleClick}) {
                         </Link>
                     </Box>
                 ))}
-                <li>
+                {/* <li>
                     <Toggler darkMode={darkMode} handleClick={handleClick}/>
-                </li>
+                </li> */}
             </Box>
         </Box>
     )
