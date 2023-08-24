@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box, Button} from "@mui/material";
+import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 // import CvPdf from "../../CV - Jennifer Fadriquela.pdf";
 
@@ -54,11 +54,6 @@ export default function About() {
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <Box mb={3} p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <a href='CV.pdf' target="_blank">
-                    <Button sx={{color: 'black'}}>Open Resume</Button>
-               </a>
-            </Box>
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>

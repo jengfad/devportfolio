@@ -29,7 +29,7 @@ export const info = {
         },
         {
             emoji: "📧",
-            text: "jenniferfadriquela@gmail.com"
+            text: "jenniferfadriquela@outlook.com"
         }
     ],
     socials: [

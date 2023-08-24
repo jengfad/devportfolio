@@ -4,7 +4,7 @@ import me from '../../img/self.jpg';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
-import {Box} from "@mui/material";
+import {Box, Button} from "@mui/material";
 import {info} from "../../info/Info";
 
 export default function Home() {
@@ -28,6 +28,9 @@ export default function Home() {
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                ))}
+               <Button sx={{color: 'black', fontWeight: 'bold'}}>
+                  <a sx={{border: '2px solid black'}} href='CV.pdf' target="_blank">Resume</a>
+               </Button>
             </Box>
          </Box>
       </Box>
